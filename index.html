@@ -9,24 +9,26 @@
     <div class="container">
       <div class="info">
         <img src="IMG_5534.jpeg" alt="My Photo" class="avatar" />
-        <h1>Павел Самсонов</h1>
-        <p>
-          Инженер по обеспечению качества с практическим опытом в тестировании
-          WEB-приложений, API, Мобильных приложений
-        </p>
-        <p>В свободное время люблю гулять и купаться в море</p>
-
-        <h4>Мои социальные сети</h2>
-            <a href="https://vk.com/id593625009" target="_blank">Vkontakte</a>
-          |
-            <a href="https://t.me/pavelsamsonov13" target="_blank">Telegram</a>
-      </div>
+        <div class="info-text">
+          <h1>Павел Самсонов</h1>
+          <p>
+            Инженер по обеспечению качества с практическим опытом в тестировании
+            WEB-приложений, API, Мобильных приложений
+          </p>
+          <p>В свободное время люблю гулять и купаться в море</p>
+  
+          <h4>Мои социальные сети</h2>
+              <a href="https://vk.com/id593625009" target="_blank">Vkontakte</a>
+            |
+              <a href="https://t.me/pavelsamsonov13" target="_blank">Telegram</a>
+        </div>
+        </div>
 
       <hr />
 
 <div class="card bg-yellow">
     <h2>Мои хобби</h2>
-    <ol>
+    <ol class="list">
         <li>Игра на гитаре</li>
         <li>Яхтинг</li>
         <li>Программирование</li>
@@ -38,12 +40,7 @@
 
 <div class="card bg-green">
     <h2>Опыт работы</h2>
-    <table>
-      <tr>
-        <th>Компания</th>
-        <th>Должность</th>
-        <th>Период</th>
-      </tr>
+    <table class="table">
       <tr>
         <td>Яндекс Практикум</td>
         <td>Инженер по тестированию</td>
@@ -58,31 +55,33 @@
 </div>
 
 
-<div class="div">
+<div class="contact">
       <h2>Связаться со мной</h2>
 
-      <form>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите Ваше имя..." />
-
-        <br />
-
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите Ваш Email..." />
-
-        <br />
-
-        <label for="text">Ваше сообщение:</label>
-
-        <br />
-
-        <textarea name="text" id="text" cols="40" rows="5"></textarea>
-
-        <br />
-
-        <input type="submit" value="Связаться" />
+      <form action="/">
+        <div class="row">
+          <div class="form-group">         
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Введите Ваше имя..." />
+          </div>
+          <div class="form-group">    
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" placeholder="Введите Ваш Email..." />
+          </div>
+        </div>
+        
+        <div class="form-group"> 
+          <label for="text">Ваше сообщение:</label>  
+          <textarea name="text" id="text" cols="20" rows="3"></textarea>
+        </div>
+          <input class="btn" type="submit" value="Связаться" />
       </form>
     </div>
+    <div class="position">
+      <div class="box"></div>
     </div>
+    </div>
+
+    <div style="margin-bottom: 500px;"></div>
   </body>
 </html>
