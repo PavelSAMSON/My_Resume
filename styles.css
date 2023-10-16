@@ -127,12 +127,15 @@ li:first-child {
 }
 
 .container #color .accordion::after {
-  content: "+";
+  content: "☟";
+  display: block;
+  width: 15px;
+  height: 15px;
   position: absolute;
-  right: 20px;
+  right: 15px;
   top: 50%;
-  transform: translateY(-50%);
-  font-size: 20px;
+  margin-top: -7px;
+  background-color: #a1e7ff;
 }
 
 .content {
@@ -206,17 +209,22 @@ li:first-child {
   padding-bottom: 30px;
 }
 
-#Obr .accordion {
-  background-color: #a3ecfe;
-}
-
-.container #Obr .accordion::after {
-  content: "+";
+.btn1 {
+  padding: 15px 20px;
+  color: #070606;
+  font-family: inherit;
+  font-size: larger;
+  cursor: pointer;
+  border-radius: 50px;
   position: absolute;
-  right: 20px;
+  right: 3px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 20px;
+  border: medium none;
+  background-image: none;
+  background: transparent;
+  float: left;
+  background-color: transparent;
 }
 
 .Molot {
@@ -245,4 +253,68 @@ li:first-child {
   margin-left: auto;
   height: 40px;
   width: 40px;
+}
+
+.cust-accord .accord-li {
+  position: relative;
+}
+
+.accord-li > input[type="checkbox"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked ~ .accord-toggle {
+  max-height: 5000px;
+  transition: 8s;
+}
+
+input[type="checkbox"]:checked ~ .accord-btn::after {
+  transform: rotate(180deg);
+  transition: 0.6s;
+}
+
+input[type="checkbox"]:checked ~ .container #color .accordion::after {
+  transform: rotate(180deg);
+  transition: 0.6s;
+}
+
+.accord-toggle {
+  max-height: 0;
+  overflow: hidden;
+  transition: 5em;
+}
+
+.accord-btn {
+  display: flex;
+  border: none;
+  min-height: 50px;
+  align-items: center;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: #a1e7ff;
+  cursor: pointer;
+  position: relative;
+  width: 70%;
+}
+
+.accord-btn::after {
+  content: "☟";
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -7px;
+  background-color: #a1e7ff;
+}
+
+.accord-li {
+  margin-bottom: 20px;
+}
+
+.accord-toggle-inner {
+  padding: 25px 15px;
 }

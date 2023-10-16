@@ -1,3 +1,5 @@
+const btn1 = document.querySelectorAll(".btn1");
+
 document.querySelectorAll(".accordion").forEach((el) => {
   el.addEventListener("click", () => {
     let content = el.nextElementSibling;
@@ -13,3 +15,15 @@ document.querySelectorAll(".accordion").forEach((el) => {
     }
   });
 });
+
+// let content = document.querySelector(".content");
+
+// document.querySelectorAll(".btn1").forEach((el) => {
+//   el.addEventListener("click", () => {
+//     if (content.classList.toggle("maxHeidht")) {
+//       el.textContent = "^";
+//     } else {
+//       el.textContent = "☟";
+//     }
+//   });
+// });
